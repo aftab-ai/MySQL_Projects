@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form {
+  position: relative;
+  width: 50%;
+  padding: 20px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#task {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 5px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &:placeholder-shown ~ .task {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 50;
+  }
+}
+
+.task {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+#task:focus {
+  ~ .task {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight: 700;
+  }
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e, #38ef7d);
+  border-image-slice: 1;
+}
+
+#task {
+  &:required,
+  &:invalid {
+    box-shadow: none;
+  }
+}
+
+.btn {
+  text-align: center;
+  display: inline-block;
+  margin: 1rem;
+  background-color: #055364;
+  border-radius: 3.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.5rem;
+  background-color: #333232;
+}
+
+h1 {
+  color: #ecf87f;
+  font-size: 3rem;
+  font-weight: bolder;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.tasks {
+  overflow-y: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 1rem;
+}
+
+th {
+  background-color: #3d550c;
+  color: #fff;
+}
+
+th,
+td {
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  text-decoration: solid;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+tr {
+  color: #08313a;
+}
+
+tr:nth-child(even) {
+  background-color: #81b622;
+}
+
+tr:nth-child(odd) {
+  background-color: #59981a;
+}
+
+tr:hover {
+  background-color: #06b348dc;
+  color: #fff;
+}
+
+.btn2 {
+  text-align: center;
+  display: inline-block;
+  background-color: #1a4314;
+  border-radius: 3rem;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 5px 10px;
+  color: #fff;
+  cursor: pointer;
+}
