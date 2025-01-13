@@ -2,7 +2,7 @@
 
 This project is all about to save and delete all the 'Tasks' to the SQL Database server.
 
-# Uses:
+# How to...
 
 1. Create your own sql database server.
 2. Add essential details(HOST, USER, DATABASE, PASSWORD) of the database to the .env file.

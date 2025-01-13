@@ -2,7 +2,7 @@
 
 This project is all about, use the basic queries of MySQL for add, read, update and delete the data from the database.
 
-# Uses:
+# How to...
 
 1. Create your own sql database server.
 2. Add essential details(HOST, USER, DATABASE, PASSWORD) of the database to the .env file.
